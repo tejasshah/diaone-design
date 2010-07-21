@@ -1,0 +1,28 @@
+//$bkg-body: #266fac;
+$bkg-body: #18648c;
+$bkg-container: #fcfdfc;
+$font-family-main: "Trebuchet MS","Trebuchet","Helvetica","Arial","Geneva","sans-serif";
+
+body{
+  background-color: $bkg-body;
+//  font-family: $font-family-main;
+
+  #container{
+    @include container;
+    background-color: $bkg-container;
+    height: 500px;
+
+    #header{
+      background-color: $bkg-body;
+      height: 50px;
+      padding-top: 1em;
+      h1{
+        color: lighten($bkg-body, 60%);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
