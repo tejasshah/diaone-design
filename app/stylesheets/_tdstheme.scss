@@ -1,23 +1,29 @@
-//$bkg-body: #266fac;
-$bkg-body: #18648c;
-$bkg-container: #fcfdfc;
+//$col-bkg-body: #266fac;
+//$col-bkg-body: #18648c;
+$col-bkg-body: #e0f7fc;
+$col-bkg-container: #fcfdfc;
 $font-family-main: "Trebuchet MS","Trebuchet","Helvetica","Arial","Geneva","sans-serif";
 
 body{
-  background-color: $bkg-body;
+  background-color: $col-bkg-body;
+  background: url('../images/grade.jpg') repeat-x scroll left top #4C7094;
 //  font-family: $font-family-main;
 
   #container{
     @include container;
-    background-color: $bkg-container;
+    background-color: $col-bkg-container;
+    border-style: solid;
+    border-width: 1px;
     height: 500px;
+    margin-top: 2em;
 
     #header{
-      background-color: $bkg-body;
+      background-color: black;
       height: 50px;
+      border-style: none;
       padding-top: 1em;
       h1{
-        color: lighten($bkg-body, 60%);
+        color: lighten($col-bkg-body, 60%);
         font-weight: bold;
       }
     }
